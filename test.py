@@ -13,8 +13,6 @@ def getCataloguesList(url, headers):
     li = catalogues.select('li')
     return li
 
-print 1
-
 def getItemCode(link): #unicode item code
     m = re.match(r"([^ ]+)show\?(?P<number>.+)", link)
     itemCode = "%s"%(m.group('number'))
